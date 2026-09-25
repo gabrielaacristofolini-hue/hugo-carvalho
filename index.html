@@ -183,7 +183,7 @@ h1,h2,h3{font-family:var(--serif);font-weight:500;line-height:1.08;margin:0;colo
 }
 
 /* Passos */
-.comecar{background:var(--linho)}
+.comecar{background:var(--linho);border-top:1px solid var(--linha)}
 .passos{list-style:none;counter-reset:passo;padding:0;margin:2.5rem 0 2rem;display:grid;grid-template-columns:repeat(3,1fr);gap:0}
 .passos li{counter-increment:passo;padding:0 2rem 0 0;position:relative}
 .passos li::before{content:counter(passo);display:flex;align-items:center;justify-content:center;width:3rem;height:3rem;border-radius:50%;border:1px solid var(--musgo);font-family:var(--serif);font-size:1.5rem;color:var(--musgo);margin-bottom:1.1rem;background:var(--linho);position:relative;z-index:1}
@@ -320,35 +320,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </section>
 
-  <!-- 3. QUEM VAI TE ATENDER -->
-  <section class="secao sobre" aria-labelledby="t-sobre">
-    <div class="wrap">
-      <div class="lado">
-        <h2 id="t-sobre">Quem vai te atender e como funciona</h2>
-        <p class="credencial">Hugo Carvalho, psicólogo clínico há mais de 10 anos. CRP 02/22525</p>
-        <a class="btn js-whats" data-local="como-funciona" data-msg="Oi, vim pelo site. Tenho me sentido ansioso e sobrecarregado, e queria conversar sobre começar a terapia." href="https://wa.me/558198811363" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg>Mandar mensagem no WhatsApp</a>
-      </div>
-
-      <div class="prosa">
-        <p class="abre">O Hugo atende pessoas a partir da adolescência que querem lidar melhor com emoções e sentimentos não processados, e com crenças negativas. Pessoas que não entendem por que suas vidas não avançam ou por que seus relacionamentos não se sustentam.</p>
-        <p>Você não precisa chegar com assunto pronto. A conversa começa pela sua rotina, sono, trabalho, casa, relações, e ele devolve o que está acontecendo em palavras que você usaria, sem jargão. O intuito é ajudar a pessoa a enxergar objetivamente qual é o seu maior problema, e é comum sair da primeira sessão mais orientado. O tom é direto e sem formalidade, e a maioria das pessoas já se solta no primeiro encontro.</p>
-        <p>Ele utiliza qualquer área da Psicologia que seja útil e eficaz para atingir as metas terapêuticas.</p>
-        <dl class="ferramentas">
-          <div>
-            <dt>TCC</dt>
-            <dd><p>A terapia cognitivo-comportamental (TCC) é uma abordagem terapêutica valiosa para ajudar pessoas que enfrentam desafios emocionais e comportamentais.</p><p>Por meio de técnicas bem fundamentadas, sessões estruturadas e foco na mudança de pensamentos negativos, ela tem impacto positivo em diversos casos, como no tratamento do Transtorno Obsessivo-Compulsivo (TOC), do Transtorno do Déficit de Atenção e Hiperatividade (TDAH) e do Transtorno de Ansiedade Generalizada (TAG), entre outros.</p></dd>
-          </div>
-          <div>
-            <dt>EMDR</dt>
-            <dd><p>A Dessensibilização e Reprocessamento por Movimentos Oculares (EMDR) é um tratamento psicoterapêutico criado para aliviar o sofrimento associado a memórias traumáticas.</p><p>Assim como o corpo tende a se recuperar de uma ferida, o sistema de processamento de informações do cérebro naturalmente se orienta para a saúde mental. Com protocolos e procedimentos detalhados, o terapeuta ajuda o paciente a ativar esses processos naturais de cura.</p></dd>
-          </div>
-        </dl>
-        <p>A terapia com o Hugo começa pela anamnese na primeira sessão e segue com história de vida, genograma, instalação de recursos, protocolo de pilares na vida, análise das crenças subjacentes, desenvolvimento de inteligência emocional e melhora dos sintomas ligados à ansiedade e a um estilo de vida disfuncional. É comum ficar visível para o paciente o que se repete, de forma oculta, em sua vida. Entre uma sessão e outra, você sai com algo para observar ou anotar, para que o processo não pare quando você fecha a porta.</p>
-        <p>O Hugo também tem experiência na área de recursos humanos, o que ajuda muitas pessoas em questões do mercado de trabalho, vocação profissional e competências organizacionais.</p>
-      </div>
-    </div>
-  </section>
-
   <!-- RELATOS (avaliações públicas do Doctoralia, identificadas por iniciais) -->
   <section class="secao relatos-sec" aria-labelledby="t-relatos">
     <div class="wrap">
@@ -422,6 +393,36 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
     </div>
   </section>
+
+  <!-- 3. QUEM VAI TE ATENDER -->
+  <section class="secao sobre" aria-labelledby="t-sobre">
+    <div class="wrap">
+      <div class="lado">
+        <h2 id="t-sobre">Quem vai te atender e como funciona</h2>
+        <p class="credencial">Hugo Carvalho, psicólogo clínico há mais de 10 anos. CRP 02/22525</p>
+        <a class="btn js-whats" data-local="como-funciona" data-msg="Oi, vim pelo site. Tenho me sentido ansioso e sobrecarregado, e queria conversar sobre começar a terapia." href="https://wa.me/558198811363" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-whats"/></svg>Mandar mensagem no WhatsApp</a>
+      </div>
+
+      <div class="prosa">
+        <p class="abre">O Hugo atende pessoas a partir da adolescência que querem lidar melhor com emoções e sentimentos não processados, e com crenças negativas. Pessoas que não entendem por que suas vidas não avançam ou por que seus relacionamentos não se sustentam.</p>
+        <p>Você não precisa chegar com assunto pronto. A conversa começa pela sua rotina, sono, trabalho, casa, relações, e ele devolve o que está acontecendo em palavras que você usaria, sem jargão. O intuito é ajudar a pessoa a enxergar objetivamente qual é o seu maior problema, e é comum sair da primeira sessão mais orientado. O tom é direto e sem formalidade, e a maioria das pessoas já se solta no primeiro encontro.</p>
+        <p>Ele utiliza qualquer área da Psicologia que seja útil e eficaz para atingir as metas terapêuticas.</p>
+        <dl class="ferramentas">
+          <div>
+            <dt>TCC</dt>
+            <dd><p>A terapia cognitivo-comportamental (TCC) é uma abordagem terapêutica valiosa para ajudar pessoas que enfrentam desafios emocionais e comportamentais.</p><p>Por meio de técnicas bem fundamentadas, sessões estruturadas e foco na mudança de pensamentos negativos, ela tem impacto positivo em diversos casos, como no tratamento do Transtorno Obsessivo-Compulsivo (TOC), do Transtorno do Déficit de Atenção e Hiperatividade (TDAH) e do Transtorno de Ansiedade Generalizada (TAG), entre outros.</p></dd>
+          </div>
+          <div>
+            <dt>EMDR</dt>
+            <dd><p>A Dessensibilização e Reprocessamento por Movimentos Oculares (EMDR) é um tratamento psicoterapêutico criado para aliviar o sofrimento associado a memórias traumáticas.</p><p>Assim como o corpo tende a se recuperar de uma ferida, o sistema de processamento de informações do cérebro naturalmente se orienta para a saúde mental. Com protocolos e procedimentos detalhados, o terapeuta ajuda o paciente a ativar esses processos naturais de cura.</p></dd>
+          </div>
+        </dl>
+        <p>A terapia com o Hugo começa pela anamnese na primeira sessão e segue com história de vida, genograma, instalação de recursos, protocolo de pilares na vida, análise das crenças subjacentes, desenvolvimento de inteligência emocional e melhora dos sintomas ligados à ansiedade e a um estilo de vida disfuncional. É comum ficar visível para o paciente o que se repete, de forma oculta, em sua vida. Entre uma sessão e outra, você sai com algo para observar ou anotar, para que o processo não pare quando você fecha a porta.</p>
+        <p>O Hugo também tem experiência na área de recursos humanos, o que ajuda muitas pessoas em questões do mercado de trabalho, vocação profissional e competências organizacionais.</p>
+      </div>
+    </div>
+  </section>
+
 
   <!-- 6. COMO COMEÇAR -->
   <section class="secao comecar" aria-labelledby="t-comecar">
